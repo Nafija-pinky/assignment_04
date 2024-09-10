@@ -1,22 +1,23 @@
-# assignment-4
+CI/CD Pipeline Setup for GitHub Repository
+Overview
+This project demonstrates how to set up a CI/CD pipeline using GitHub Actions for a repository. The pipeline includes stages for linting, code quality checks, and unit testing. Additionally, it automates the merging of feature branches into the dev branch upon successful CI validation.
 
- Create a new repository
- - Created a repor assignment-4 
- 
-- Add a Git action workflow
-- added CI
-  
-- Repository need to have one 'dev' branch
-- added brnach
-- Repository may have multiple 'feature/' branch
-- Whenever any commits have been made to any of the 'feature/*' branches, CI will be triggered
-- In CI, the following stages need to be passed
-    added Linter
-    added Code quality check
-    added Unit test
-- If all stages are passed successfully, CI will merge the code into the 'dev' branch
-- To submit the project, in assignment_4 directory create a sub-directory like <your_name>-<your_ID>
-- Inside the sub-directory have a README.md file
-- In the readme file describe the process and add the link to your project repository
-- Create a PR
-- Submit the PR link in the classroom
+Repository Setup
+Create a New Repository:
+
+Created a new repository named <assignment-04> on GitHub.
+Branch Structure:
+
+dev Branch: This is the primary development branch.
+Feature Branches: Multiple feature branches prefixed with feature/ are created for development.
+GitHub Actions Workflow:
+
+Added a GitHub Actions workflow file located at .github/workflows/ci.yml.
+CI/CD Pipeline Configuration:
+
+Linter: Ensures that code adheres to the specified linting rules.
+Code Quality Check: Performs static analysis to check for code quality issues.
+Unit Test: Runs unit tests to ensure that the code behaves as expected.
+Automated Merging:
+
+If all CI stages pass successfully, the code from the feature branch is automatically merged into the dev branch.
